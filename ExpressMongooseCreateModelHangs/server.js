@@ -81,14 +81,14 @@ app.get('/', function(req, res) {
     /* Form a normal result.
 
     if(!err) {
-      console.log('everything is fine, doc is');
+      console.log('Everything is fine, get the response.');
       res.json({
         result:'ok',
         lost: doc
       });
       console.log('Good luck!');
     } else {
-      console.log('Error');
+      console.log('Error occured.');
       res.json({
         result:'error',
         error: err
