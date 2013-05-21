@@ -106,4 +106,4 @@ console.log("Listening on port ", port);
 
 console.log("MongoDB url ", mongourl);
 
-console.log('Navigate your browser to http://localhost:', port);
+console.log('Navigate your browser to http://localhost:%d', port);
