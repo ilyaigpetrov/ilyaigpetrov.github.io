@@ -1,13 +1,35 @@
 {
-	"name":"RegisterUser",
-	"version":"0.0.1",
-	"dependencies": {
-		"express":">=2.5.8",
-		"mongoose":">=2.5.10",
-		"connect-mongodb":">=1.1.3"
-	},
-	"engines":{
-		"node":">=0.6.x",
-		"npm":">=1.1.x"
-	}
+  "name": "DemonstrateCreateModelCallbackOfMongooseNotCalledInExpress3",
+  "version": "0.0.1",
+  "description": "Upon a `GET / HTTP` request handled by Express 3.x create an instance of a User model described with Mongoose. Demonstrate that callback for creation isn't called.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ipetrovilya/discussions_with_ipetrovilya"
+  },
+  "keywords": [
+    "express",
+    "mongoose",
+    "callback",
+    "create",
+    "hangs",
+    "freezes",
+    "not called",
+    "problem"
+  ],
+  "dependencies": {
+    "express":"3.x.x",
+    "mongoose":"3.x.x",
+    "connect-mongodb":"1.x.x"
+  },
+  "engines":{
+    "node":">=0.6.x",
+    "npm":">=1.1.x"
+  },
+  "author": "ipetrovilya",
+  "license": "BSD"
 }
