@@ -59,7 +59,7 @@ app.configure(function() {
 });
 
 app.get('/', function(req, res) {
-  console.log('ready to register new user...');
+  console.log('ready to register a new user...');
 
   var user = {
     firstName: 'Some Name',
@@ -72,7 +72,7 @@ app.get('/', function(req, res) {
   console.log('calling user create...');
   User.create(user, function(err, doc) {
 
-    console.log('Callback is executing...');
+    console.log('WHY IS THIS MESSAGE NOT PRINTED AT ALL!');
     var done = process.stdout.write(str);
     if (!done) { // Is stdout blocked?
       process.stdout.on('drain', _)
@@ -97,7 +97,7 @@ app.get('/', function(req, res) {
     */
 
   });
-  console.log('RESPONSE IS OVER. CHECK IF USER WAS CREATED. [HERE WE HANG]');
+  console.log('RESPONSE IS OVER. THIS MESSAGE IS PRINTED AT THE END AND WE HANG AFTERWARDS.');
 });
 
 app.listen(port);
