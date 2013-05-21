@@ -102,6 +102,8 @@ app.get('/', function(req, res) {
 
 app.listen(port);
 
-console.log("listening on port ", port);
+console.log("Listening on port ", port);
 
-console.log("mongodb url ", mongourl);
+console.log("MongoDB url ", mongourl);
+
+console.log('Navigate your browser to http://localhost:', port);
