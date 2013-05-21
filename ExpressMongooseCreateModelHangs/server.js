@@ -73,7 +73,7 @@ app.get('/', function(req, res) {
   User.create(user, function(err, doc) {
 
     console.log('WHY IS THIS MESSAGE NOT PRINTED AT ALL!');
-    var done = process.stdout.write(str);
+    var done = process.stdout.write('Are we stuck at flushing?');
     if (!done) { // Is stdout blocked?
       process.stdout.on('drain', _)
     }
