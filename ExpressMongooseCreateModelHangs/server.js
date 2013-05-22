@@ -39,9 +39,7 @@ schema = new Schema(attributes, {
 var User = mongoose.model('User', schema);
 
 app.configure(function() {
-  
-  //app.use(express.methodOverride());
-  //app.use('/static', express.static(__dirname + '/static'));
+
   app.use(express.cookieParser());
 
   app.use(express.session({
@@ -53,13 +51,13 @@ app.configure(function() {
       return console.log(err || 'connect-mongodb setup ok');
     })
   }));
-  
+
   return app;
-  //return app.use(app.router);
+  //return app.use(app.router); // Doesn't work as well.
 });
 
 app.get('/', function(req, res) {
-  console.log('ready to register a new user...');
+  console.log('Ready to register a new user...');
 
   var user = {
     firstName: 'Some Name',
@@ -69,7 +67,7 @@ app.get('/', function(req, res) {
     phone: 'no phone'
   }
 
-  console.log('calling user create...');
+  console.log('Calling User.create...');
   User.create(user, function(err, doc) {
 
     console.log('WHY IS THIS MESSAGE NOT PRINTED AT ALL?');
