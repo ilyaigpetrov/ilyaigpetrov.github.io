@@ -1,0 +1,19 @@
+.tabMenu {
+  background: black;
+  color: white;
+  width: 100%;
+}
+.tabMenu a {
+  color: white;
+  padding: 1em;
+	transition: 500ms linear 0s;
+	outline: 0 none;
+  text-decoration: none;
+  font-size: 3em;
+}
+.tabMenu a:hover {
+  text-shadow: -1px 1px 8px #007eff, 1px -1px 8px #007eff;  
+}
+.tabScreen .tab:not(:target) {
+  display: none;
+}

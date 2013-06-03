@@ -1,0 +1,6 @@
+.ProductsEdits {
+  /*display: none; /* Being displayed this can trigger hash-tag jumps for some reason. */
+}
+[data-reveal-id] {
+  cursor: pointer;
+}

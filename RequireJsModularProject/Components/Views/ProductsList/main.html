@@ -1,0 +1,31 @@
+
+<div class='ProductsList'>
+
+  <h1>ProductsList</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>name</th><th>description</th><th>price</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%
+        _.each(
+          products.sort( utils.numCompareBy('price') ),
+          function( product ) {
+            %>
+              <tr data-reveal-id="edit-<%= product.id %>-modal" data-animation="none">
+                <td> <%= product.name  %> </td>
+                <td> <%= product.desc  %> </td>
+                <td> <%= product.price %> </td>
+              </tr>
+            <%
+          }
+        );
+      %>
+    </tbody>
+  </table>
+
+</div>

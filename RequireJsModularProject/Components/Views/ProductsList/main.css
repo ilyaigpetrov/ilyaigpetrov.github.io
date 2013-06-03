@@ -1,0 +1,16 @@
+.ProductsList table {
+  margin: 0.2em;
+}
+.ProductsList table > thead > tr {
+  text-align: left;
+  padding: 0.5em;
+  background: gold;
+}
+.ProductsList table tr > * {
+  padding: 0.2em;
+  padding-left: 1em;
+  border-bottom: 1px solid black;
+}
+.ProductsList table > tbody > tr:hover {
+  background: pink;
+}

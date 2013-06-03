@@ -1,0 +1,16 @@
+.ProductsTile .tile {
+  display: inline-block;
+  padding: 0.5em;
+  border: 1px solid grey;
+  text-align: center;
+}
+
+.ProductsTile .tile:hover {
+  background: pink;
+}
+
+.ProductsTile .tile > img {
+  max-width: 10em;
+  max-height: 10em;
+  border: 0;
+}

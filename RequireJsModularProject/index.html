@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="Assets/css/normalize.css">
+        <link rel="stylesheet" href="Assets/css/main.css">
+        <link rel="stylesheet" href="Assets/css/custom.css">
+        <script src="Components/Libs/Modernizr/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <script data-main='Components/Application.js' src='Components/Libs/RequireJS/require.js'></script>
+        <script>
+          requirejs.onError = function (err) {
+
+              // Unfortunately, this error catching mechanism lacks
+              // proper error details reporting. TODO:
+              
+              console.log('An error occured somewhere inside RequireJS. Explore it below.');
+              console.dir(err);
+              if (err.requireModules) {
+                var moduleId = err.requireModules[0];
+                var msg = err.message;
+                console.log('Error while loading module "%s": "%s".', moduleId, msg);
+              }
+              
+              // What if I would like now to
+              // present a user an error message
+              // but in a nice way preserving site
+              // design defined in `Main` module
+              // charged with another content of an
+              // error message. How to do it?
+              // We can load `Main` first w/ it's own
+              // deps, but how to trigger it on error?
+
+              // TODO: Inform interested parts about the error.
+
+              throw err;
+          };
+
+          /* Better url handling.
+          (function () {
+            var load = requirejs.load;
+            requirejs.load = function (context, moduleId, url) {
+              //modify url here, then call original load
+              return load(context, moduleId, url);
+            };
+
+            //Now load code.
+            require(['main']);
+          }());
+          */
+        </script>
+</html>
