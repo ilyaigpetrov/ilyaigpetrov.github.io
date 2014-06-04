@@ -1,0 +1,27 @@
+[
+  {
+    id    : 0,
+    name  : 'Чебурашка',
+    desc  : 'Популярная советская игрушка.',
+    picture : 'Assets/img/photo.jpg',
+    price : 33.04
+  },
+  {
+    id  : 1,
+    name : "item1",
+    desc : "blalblal",
+    picture : "http://",
+    price : 41.24
+  },
+  {
+    id  : 2,
+    name : "item2",
+    desc : "blabla2",
+    picture : "",
+    price : 23.01
+  },
+  {
+    id  : 3,
+    name: 42
+  }
+]

@@ -1,0 +1,25 @@
+<div class='ProductsEdits'>
+  <%
+    var products = productsSource.readAll();;
+    _.each(
+      products,
+      function( product ) {
+        %>
+          <div id="edit-<%= product.id %>-modal" class="reveal-modal">
+            <a class="close-reveal-modal">&#215;</a>
+            <img src='<%= product.picture %>' />
+            <h1><%= product.name %></h1>
+            <div>
+              Name: <input value="<%= product.name %>"/><br/>
+              Description:<br/>
+              <textarea style='width: 100%; height: 10em; padding: 0.2em'><%= product.desc %></textarea>
+              <br/>
+              Price: <input value="<%= product.price %>"/><br/>
+            </div>
+            <input type='button' value='Update'/>
+          </div>
+        <%
+      }
+    );
+  %>
+</div>

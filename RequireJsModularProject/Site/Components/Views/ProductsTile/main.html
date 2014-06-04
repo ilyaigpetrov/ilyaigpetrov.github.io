@@ -1,0 +1,16 @@
+<div class='ProductsTile'>
+  <h1>ProductsTile</h1>
+  <%
+    var products = productsSource.readAll();
+    _.each(
+      products.sort( utils.lexCompareBy('name') ),
+      function( product ) {
+        %> <div class='tile' data-reveal-id="edit-<%= product.id %>-modal" data-animation="none"> <%
+          %> <img src='<%= product.picture %>' /> <br/> <%
+          %> <%= product.name %> <br/> <%
+        %> </div> <%
+      }
+    );
+
+  %>
+</div>
