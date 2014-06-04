@@ -1,8 +1,8 @@
 What is It About
 ================
-This is a single web page that retrieves data from  
-a json file on the server, parses that data to  
-products and displays them in two tabs or views:  
+This is a single web page that retrieves data from a json  
+file on the server, parses that data to products and displays  
+them in two tabs or views:  
 * a list view,
 * a thumb view.
 
