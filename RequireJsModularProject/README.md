@@ -1,12 +1,15 @@
 What is It About
 ================
 This is a single web page that retrieves data from a json  
-file on the server, parses that data to products and displays  
-them in two tabs or views:  
+file on the server, parses that data to products and  
+displays them in two tabs or views:  
+
 * a list view,
 * a thumb view.
 
-A titbit of this web page is that it uses `RequireJS` (Asynchrounous Module Definition or `AMD` implementation) to load all the client side JavaScript.
+A titbit of this web page is that it uses `RequireJS`  
+(Asynchrounous Module Definition or `AMD` implementation)  
+to load all the client side JavaScript.
 
 
 The Story
