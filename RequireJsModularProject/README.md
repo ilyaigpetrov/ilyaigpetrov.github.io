@@ -5,6 +5,7 @@ a json file on the server, parses that data to
 products and display them in two views:  
 * a list view,
 * a thumb view.
+
 A titbit of this web page is that it uses `RequireJS`  
 (Asynchrounous Module Definition or `AMD` implementation)  
 to load all the client side JavaScript.
