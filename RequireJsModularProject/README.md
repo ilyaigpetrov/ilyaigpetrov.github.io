@@ -1,3 +1,22 @@
+What is It About
+================
+This is a single web page that retrieves data from  
+a json file on the server, parses that data to  
+products and display them in two views:  
+* a list view,
+* a thumb view.
+A titbit of this web page is that it uses `RequireJS`  
+(Asynchrounous Module Definition or `AMD` implementation)  
+to load all the client side JavaScript.
+
+
+The Story
+=========
+This page started as solution to a test task from one
+company. The task required to use dependency injection,  
+so I've stuck to the AMD model.
+
+
 How to Launch
 =============
 
@@ -6,6 +25,7 @@ F.e., you can do it with python 3 with command:
 `python3 -m http.server`  
 , which opens http server on port 8000.  
 After that open 'localhost:8000' in a browser.
+
 
 Issues
 ======
