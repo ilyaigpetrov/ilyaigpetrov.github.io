@@ -1,4 +1,5 @@
 How to Launch
+=============
 
 Open 'Site' folder and launch http server there.
 F.e., you can do it with python 3 with command:
@@ -7,6 +8,7 @@ F.e., you can do it with python 3 with command:
 After that open 'localhost:8000' in a browser.
 
 Issues
+======
 
 Issue #1
 Title: Absence of Garbage Collection for Event Handlers
@@ -58,12 +60,15 @@ jumps. Triggering mustn't hide tabs bar.
 
 
 ToDo
+====
 
 Data Sources
+------------
 
 * Check malformed data filter
 
 Controllers
+-----------
 
 * Add routing.
 
