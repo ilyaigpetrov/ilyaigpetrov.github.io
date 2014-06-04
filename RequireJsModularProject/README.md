@@ -1,10 +1,10 @@
 How to Launch
 =============
 
-Open 'Site' folder and launch http server there.
-F.e., you can do it with python 3 with command:
-`python3 -m http.server`
-, which opens http server on port 8000.
+Open 'Site' folder and launch http server there.  
+F.e., you can do it with python 3 with command:  
+`python3 -m http.server`  
+, which opens http server on port 8000.  
 After that open 'localhost:8000' in a browser.
 
 Issues
